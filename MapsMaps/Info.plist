@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>Privacy - Location When In Use Usage Discription</key>
-	<string>このアプリは利用中に位置情報を使います。</string>
+	<string>このアプリは利用中に位置情報を使います。許してね</string>
 </dict>
 </plist>
