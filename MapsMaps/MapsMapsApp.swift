@@ -11,7 +11,8 @@ import SwiftUI
 struct MapsMapsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(LocalSearchService())
+//            ContentView().environmentObject(LocalSearchService())
+            MapView()
         }
     }
 }
