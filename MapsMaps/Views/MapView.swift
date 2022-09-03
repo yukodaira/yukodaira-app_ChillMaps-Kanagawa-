@@ -25,37 +25,33 @@ struct MapView: View {
     
     // 画面表示
     var body: some View {
-        // MapViewの準備。地図に表示するマーク(annotation)用のデータと一緒にセットする
-        Map(coordinateRegion: $coordinateRegion, annotationItems: spots) { spot in
-            // 1つのspotデータを元にannotattionの見た目の設定をしていく
-            MapAnnotation(
-                coordinate: CLLocationCoordinate2D( // Annotationの位置
-                    latitude: spot.latitude,
-                    longitude: spot.longitude
-                                                  )
-            ) {
-                VStack { // Annotationの見た目
-                    Text(spot.name)
-                        .font(.caption2)
-                        .bold()
-                    Image(systemName: "mappin.circle.fill")
-                        .font(.title2)
-                        .foregroundColor(.red)
-                        .shadow(radius: 1)
-                        .onTapGesture { // タップしたときの挙動を実装
-                            // 本来ここに次の画面への遷移を書く
-                            
-                            // とりあえずAlertを表示させとく（あとで消してOK）
-                            alertTitle = spot.name // alertTitleの文言を設定
-                            showingAlert = true // Alertフラグをtrueにする
+        NavigationView {
+            // MapViewの準備。地図に表示するマーク(annotation)用のデータと一緒にセットする
+            Map(coordinateRegion: $coordinateRegion, annotationItems: spots) { spot in
+                // 1つのspotデータを元にannotattionの見た目の設定をしていく
+                MapAnnotation(
+                    coordinate: CLLocationCoordinate2D( // Annotationの位置
+                        latitude: spot.latitude,
+                        longitude: spot.longitude
+                                                      )
+                ) {
+                    VStack { // Annotationの見た目
+                        Text(spot.name)
+                            .font(.caption2)
+                            .bold()
+                        NavigationLink(destination: SampleSecondView(spot: spot)) {
+                            Image(systemName: "mappin.circle.fill")
+                                .font(.title2)
+                                .foregroundColor(.red)
+                                .shadow(radius: 1)
                         }
-                }
-                .alert(isPresented: $showingAlert) { // Alertフラグがtrueになったらアラートを表示する
-                    Alert(title: Text(alertTitle))
+                    }
                 }
             }
+            .ignoresSafeArea() // 時刻などが表示されてる部分にも地図を表示
+            .navigationBarHidden(true) // ナビゲーションバーのタイトルを非表示にする
+            .onAppear(perform: readJSON) // 画面が表示されるときにonAppearが呼ばれ、その際にreadJSONの処理を呼ぶ
         }
-        .onAppear(perform: readJSON) // 画面が表示されるときにonAppearが呼ばれ、その際にreadJSONの処理を呼ぶ
     }
     
     // JSONファイルの読み込み
