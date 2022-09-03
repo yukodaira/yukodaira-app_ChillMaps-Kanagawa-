@@ -39,11 +39,11 @@ struct MapView: View {
                         Text(spot.name)
                             .font(.caption2)
                             .bold()
-                        NavigationLink(destination: SampleSecondView(spot: spot)) {
-                            Image(systemName: "mappin.circle.fill")
-                                .font(.title2)
-                                .foregroundColor(.red)
-                                .shadow(radius: 1)
+                        NavigationLink(destination: SecondView(spot: spot)) {
+                            Image("MapIcon")
+//                                .font(.title2)
+//                                .foregroundColor(.red)
+//                                .shadow(radius: 1)
                         }
                     }
                 }
@@ -78,6 +78,10 @@ struct MapView: View {
 struct Spot: Codable, Identifiable {
     var id: Int // Idnetifiableに適合しているとidというpropertyが必要
     let name: String
+    let imageURL: String
+    let access: String
+    let description: String
+    let category: String
     let latitude: Double
     let longitude: Double
 }

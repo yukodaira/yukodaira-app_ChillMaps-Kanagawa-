@@ -36,7 +36,6 @@ struct ContentView: View {
             Map(coordinateRegion: $localSearchService.region, showsUserLocation: true, annotationItems: localSearchService.landmarks) { landmark in
                 
                 MapAnnotation(coordinate: landmark.coordinate) {
-//                    Text("S")
                     Image(systemName: "Chillspot")
                         .foregroundColor(localSearchService.landmark == landmark ? .purple: .red)
                         .scaleEffect(localSearchService.landmark == landmark ? 2: 1)

@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		0F0497B828C2E8D6007C900F /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
-		B912FCE828AA7395006401EE /* MapsMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapsMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B912FCE828AA7395006401EE /* ChillMaps(Kanagawa).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChillMaps(Kanagawa).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B912FCEB28AA7395006401EE /* MapsMapsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsMapsApp.swift; sourceTree = "<group>"; };
 		B912FCED28AA7395006401EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B912FCEF28AA7396006401EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		B912FCE928AA7395006401EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B912FCE828AA7395006401EE /* MapsMaps.app */,
+				B912FCE828AA7395006401EE /* ChillMaps(Kanagawa).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,8 +98,8 @@
 			children = (
 				B912FD1128AA769B006401EE /* LandmarkListView.swift */,
 				B99A8BF728C23A75008C7FF1 /* MapView.swift */,
-				B99A8BFB28C24C11008C7FF1 /* SampleSecondView.swift */,
 				0F0497B828C2E8D6007C900F /* SecondView.swift */,
+				B99A8BFB28C24C11008C7FF1 /* SampleSecondView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,9 +139,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B912FCE728AA7395006401EE /* MapsMaps */ = {
+		B912FCE728AA7395006401EE /* ChillMaps(Kanagawa) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B912FCF628AA7396006401EE /* Build configuration list for PBXNativeTarget "MapsMaps" */;
+			buildConfigurationList = B912FCF628AA7396006401EE /* Build configuration list for PBXNativeTarget "ChillMaps(Kanagawa)" */;
 			buildPhases = (
 				B912FCE428AA7395006401EE /* Sources */,
 				B912FCE528AA7395006401EE /* Frameworks */,
@@ -151,9 +151,9 @@
 			);
 			dependencies = (
 			);
-			name = MapsMaps;
+			name = "ChillMaps(Kanagawa)";
 			productName = MapsMaps;
-			productReference = B912FCE828AA7395006401EE /* MapsMaps.app */;
+			productReference = B912FCE828AA7395006401EE /* ChillMaps(Kanagawa).app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -184,7 +184,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B912FCE728AA7395006401EE /* MapsMaps */,
+				B912FCE728AA7395006401EE /* ChillMaps(Kanagawa) */,
 			);
 		};
 /* End PBXProject section */
@@ -345,9 +345,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MapsMaps/Preview Content\"";
+				DEVELOPMENT_TEAM = 32WDK9NAXQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MapsMaps/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ChillMaps(Kanagawa)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -374,9 +376,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MapsMaps/Preview Content\"";
+				DEVELOPMENT_TEAM = 32WDK9NAXQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MapsMaps/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ChillMaps(Kanagawa)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -407,7 +411,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B912FCF628AA7396006401EE /* Build configuration list for PBXNativeTarget "MapsMaps" */ = {
+		B912FCF628AA7396006401EE /* Build configuration list for PBXNativeTarget "ChillMaps(Kanagawa)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B912FCF728AA7396006401EE /* Debug */,
