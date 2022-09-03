@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F0497B928C2E8D7007C900F /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0497B828C2E8D6007C900F /* SecondView.swift */; };
 		B912FCEC28AA7395006401EE /* MapsMapsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B912FCEB28AA7395006401EE /* MapsMapsApp.swift */; };
 		B912FCEE28AA7395006401EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B912FCED28AA7395006401EE /* ContentView.swift */; };
 		B912FCF028AA7396006401EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B912FCEF28AA7396006401EE /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F0497B828C2E8D6007C900F /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		B912FCE828AA7395006401EE /* MapsMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapsMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B912FCEB28AA7395006401EE /* MapsMapsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsMapsApp.swift; sourceTree = "<group>"; };
 		B912FCED28AA7395006401EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				B912FD1128AA769B006401EE /* LandmarkListView.swift */,
 				B99A8BF728C23A75008C7FF1 /* MapView.swift */,
 				B99A8BFB28C24C11008C7FF1 /* SampleSecondView.swift */,
+				0F0497B828C2E8D6007C900F /* SecondView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				B912FCEE28AA7395006401EE /* ContentView.swift in Sources */,
 				B99A8BFC28C24C11008C7FF1 /* SampleSecondView.swift in Sources */,
 				B912FD0A28AA7676006401EE /* MKCoordinateRegion+Extensions.swift in Sources */,
+				0F0497B928C2E8D7007C900F /* SecondView.swift in Sources */,
 				B912FCEC28AA7395006401EE /* MapsMapsApp.swift in Sources */,
 				B912FD1228AA769B006401EE /* LandmarkListView.swift in Sources */,
 				B912FD0E28AA7688006401EE /* Landmark.swift in Sources */,
