@@ -17,7 +17,7 @@ struct MapView: View {
             latitude: 35.4660694,
             longitude: 139.6226196
         ),
-        span: MKCoordinateSpan(latitudeDelta: 0.3, longitudeDelta: 0.3)
+        span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
     )
     // アラートの表示をコントロールするフラグ
     @State private var showingAlert = false
@@ -38,7 +38,7 @@ struct MapView: View {
                     VStack { // Annotationの見た目
                         Text(spot.name)
                             .font(.caption2)
-                            .bold()
+//                            .bold()
                         NavigationLink(destination: SecondView(spot: spot)) {
                             Image("MapIcon")
 //                                .font(.title2)

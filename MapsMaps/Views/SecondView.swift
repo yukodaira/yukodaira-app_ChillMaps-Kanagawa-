@@ -31,30 +31,33 @@ struct SecondView: View {
                 }
                 
                 Text(spot.name)
-                    .font(.largeTitle)
-                    .foregroundStyle(.green)
-                    .background(Color.black.opacity(0.3))
+                    .font(.title)
+                    .bold()
+                    .foregroundStyle(.pink)
             }
             
-            VStack(spacing: 10) {
+            VStack(alignment: .leading, spacing: 10) {
                 HStack(alignment: .firstTextBaseline, spacing: 10) {
                     Text("カテゴリ")
+                    .background(Color.green.opacity(0.3))
                     Text(spot.category)
                 }
                 
                 HStack(alignment: .firstTextBaseline, spacing: 10) {
                     Text("アクセス")
+                        .background(Color.green.opacity(0.3))
                     Text(spot.access)
                 }
                 
                 HStack(alignment: .firstTextBaseline, spacing: 10) {
                     Text("見どころ")
+                        .background(Color.green.opacity(0.3))
                     Text("市役所方面にトンネルを３つ超えた先、常盤の山の中に位置するカフェ「樹ガーデン」。入口から約170段近い階段を登った先には、遮るものもない広大な自然が眼下に広がる。山の斜面に備えられたテラス席は赤レンガで囲われており、古都鎌倉にいながら西欧の田園都市で過ごす感覚を味わう事が出来る。平日は比較的余裕があるが、新緑や紅葉の時期になると週末や休日はかなり混雑するため、開店直後がおすすめ。")
                 }
             }
         }
         
-        MapView().frame(width: screenwidth, height: screenwidth / 1.62)
+        MapView().frame(width: screenwidth, height: screenwidth / 2.5)
         
     }
 }
